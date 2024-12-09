@@ -59,7 +59,7 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 };
 
 static void render_logo(void) {
-    oled_write_ln("base");
+    oled_write_ln("base", 0);
 }
 
 bool oled_task_user(void) {
