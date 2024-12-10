@@ -75,7 +75,7 @@ static void render_logo(void) {
 
 static void print_status_narrow(void) {
     // Print current layer
-    oled_write_ln_P(PSTR("LAYER:"), false);
+    oled_write_ln_P(PSTR("LAYER"), false);
     switch (get_highest_layer(layer_state)) {
         case U_BASE:
             oled_write_P(PSTR("base\n"), false);
