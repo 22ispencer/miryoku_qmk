@@ -55,7 +55,7 @@ const key_override_t **key_overrides = (const key_override_t *[]){&capsword_key_
 #ifdef OLED_ENABLE
 
 static void render_logo(void) {
-    static const unsigned char PROGMEM raw_logo[] = {
+    static const char PROGMEM raw_logo[] = {
         112,248,168,248,216,136,252, 12,  6,  6,  4, 14,158,254, 12,  0,
     };
     oled_write_raw_P(raw_logo, sizeof(raw_logo));
